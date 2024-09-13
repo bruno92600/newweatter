@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { fetchWeatherData } from "@/lib/fetchWeatherData";
 
 export function useWeatherData(lat: string, long: string) {
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   const [temperatureChartData, setTemperatureChartData] = useState<any>(null);
   const [humidityChartData, setHumidityChartData] = useState<any>(null);
   const [precipitationSumChartData, setPrecipitationSumChartData] =
